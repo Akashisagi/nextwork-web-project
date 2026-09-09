@@ -1,4 +1,7 @@
-<settings>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                              https://maven.apache.org/xsd/settings-1.0.0.xsd">
   <servers>
     <server>
       <id>nextwork-nextwork-devops-cicd</id>
@@ -17,12 +20,24 @@
         <repository>
           <id>nextwork-nextwork-devops-cicd</id>
           <url>https://nextwork-721954953876.d.codeartifact.ap-south-1.amazonaws.com/maven/nextwork-devops-cicd/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
         </repository>
       </repositories>
       <pluginRepositories>
         <pluginRepository>
           <id>nextwork-nextwork-devops-cicd</id>
           <url>https://nextwork-721954953876.d.codeartifact.ap-south-1.amazonaws.com/maven/nextwork-devops-cicd/</url>
+          <releases>
+            <enabled>true</enabled>
+          </releases>
+          <snapshots>
+            <enabled>true</enabled>
+          </snapshots>
         </pluginRepository>
       </pluginRepositories>
     </profile>
